@@ -15,7 +15,7 @@ export default function RoleCard({
       onClick={onClick}
       className={`
         relative cursor-pointer rounded-2xl border
-        bg-white p-6 w-[360px]
+        bg-white p-1 w-[400px]
         transition-all duration-300
         ${
           selected

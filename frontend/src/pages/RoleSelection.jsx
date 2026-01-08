@@ -7,18 +7,18 @@ export default function RoleSelection() {
 
   return (
     <div className="bg-[#fff7ed]">
-      <div className="max-w-7xl mx-auto px-6 py-14">
+      <div className="max-w-6xl mx-auto px-6 py-14">
 
-        <div className="text-center mb-14">
-          <h1 className="text-3xl font-bold text-gray-900">
+        <div className="text-center mb-10">
+          <h1 className="text-1xl font-bold text-gray-900">
             Choose Your Interface
           </h1>
-          <p className="mt-3 text-orange-400">
+          <p className="mt-1 text-orange-400">
             Select your role to access the appropriate workspace
           </p>
         </div>
 
-        <div className="flex justify-center gap-8">
+        <div className="flex justify-center gap-6">
 
           <RoleCard
             title="Employee Portal"
