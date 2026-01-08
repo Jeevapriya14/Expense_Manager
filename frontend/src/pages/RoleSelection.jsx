@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { User, Shield, Settings } from "lucide-react"
+import { User, Shield, Settings, ArrowRight } from "lucide-react"
 import RoleCard from "../custom/RoleCard"
 
 export default function RoleSelection() {
@@ -86,7 +86,11 @@ export default function RoleSelection() {
           <button
             disabled={!selectedRole}
             className={`
+              ml-110
               px-6 py-3 rounded-xl font-medium transition
+              min-w-[220px] whitespace-nowrap
+              flex items-center justify-center gap-2
+
               ${
                 selectedRole
                   ? "bg-orange-500 text-white hover:bg-orange-600"
@@ -95,7 +99,10 @@ export default function RoleSelection() {
             `}
           >
             {selectedRole
-              ? `Continue as ${selectedRole.charAt(0).toUpperCase() + selectedRole.slice(1)}`
+              ? 
+              <>Continue as {selectedRole.charAt(0).toUpperCase() + selectedRole.slice(1)}  
+              <ArrowRight size={22}/>
+              </>
               : "Select a Role to Continue"}
           </button>
         </div>
